@@ -30,3 +30,10 @@ tailwindCSS利用
 https://tailwindcss.com/docs/installation/using-vite
 npm install tailwindcss @tailwindcss/vite
 
+shadcn利用
+https://ui.shadcn.com/docs
+
+npm install -D @types/node
+
+
+
