@@ -31,9 +31,13 @@ https://tailwindcss.com/docs/installation/using-vite
 npm install tailwindcss @tailwindcss/vite
 
 shadcn利用
+ドキュメントを参照してください
 https://ui.shadcn.com/docs
 
 npm install -D @types/node
+
+npx shadcn@latest init
+
 
 
 
