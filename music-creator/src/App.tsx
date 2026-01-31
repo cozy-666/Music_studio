@@ -127,7 +127,7 @@ function App() {
       <main className="w-full">
         <header className="bg-gradient-to-b from-green-900/40 to-black/60 px-8 py-6">
           <div className="flex items-center justify-between mb-8">
-            <h1 className="text-3xl font-bold text-white">MusicGen Studio</h1>
+            <h1 className="text-3xl font-bold text-white">Music suuda Studio</h1>
             <Link to="/create">
               <Button className="bg-green-500 hover:bg-green-400 text-black font-semibold px-6 py-2 rounded-full">
                 <Plus className="w-4 h-4 mr-2" />
@@ -137,7 +137,7 @@ function App() {
           </div>
 
           <div className="mb-8">
-            <h2 className="text-5xl font-bold text-white mb-4">Good evening</h2>
+            <h2 className="text-5xl font-bold text-white mb-4">Good Innocent World</h2>
             <p className="text-gray-300 text-lg">
               Ready to discover your next favorite AI-generated track?
             </p>
