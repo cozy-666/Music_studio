@@ -18,3 +18,8 @@ frameworkはReact variantはTypescript
 
 cd 名前
 npm install
+
+npm run dev
+http://localhost:5173/
+
+上記リンクで表示
