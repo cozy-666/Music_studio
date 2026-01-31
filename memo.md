@@ -43,3 +43,5 @@ application => strage
 useEffect
 副作用を扱うためのフック
 外部のものと繋ぐ
+
+Typescriptでコーディングの最中にエラーが確認できる

@@ -50,5 +50,9 @@ VITE_LOUDLY_API_KEY=
 ## api
 npm i axios
 
+## スタイリング
+npm i lucide-react
+npx shadcn@latest add card dialog
+
 
 
