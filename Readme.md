@@ -24,3 +24,9 @@ npm run dev
 http://localhost:5173/
 
 上記リンクで表示
+
+## スタイリングのライブラリ導入
+tailwindCSS利用
+https://tailwindcss.com/docs/installation/using-vite
+npm install tailwindcss @tailwindcss/vite
+
