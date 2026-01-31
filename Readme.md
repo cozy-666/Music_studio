@@ -15,3 +15,6 @@ npm create vite@latest
 
 frameworkはReact variantはTypescript
 他はnoで
+
+cd 名前
+npm install
