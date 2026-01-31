@@ -31,7 +31,8 @@ function App() {
         "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400&h=400&fit=crop&crop=center",
     },
   ];
-
+//下記サイト参照
+  // https://developer.mozilla.org/ja/docs/Web/API/HTMLAudioElement
   const playMusic = (audioUrl: string) => {
     const audio = new Audio(audioUrl);
     audio.play();
