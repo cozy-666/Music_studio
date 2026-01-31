@@ -47,5 +47,8 @@ VITE_LOUDLY_API_KEY=
 で獲得したAPIを設定。
 ※課金設定があるので、外部公開しないように
 
+## api
+npm i axios
+
 
 
