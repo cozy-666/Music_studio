@@ -1,5 +1,14 @@
 import axios from "axios";
+import { Music } from "lucide-react";
 import { useState } from "react";
+
+type Music = {
+  id: string;
+  title: string;
+  artist: string;
+  audioUrl: string;
+  coverUrl: string;
+};
 
 function CreatePage(){
     // 初期値は""
@@ -37,6 +46,29 @@ function CreatePage(){
             alert("音楽生成に失敗しました");
         }
     }
+
+    const handleSave = () => {
+        if (!generatedMusic || !title || !genre) {
+        alert("音楽を生成してから保存してください");
+        return;
+        }
+
+        const musicData: Music = {
+        id: Date.now().toString(),
+        title: title,
+        artist: "AI Generated",
+        audioUrl: generatedMusic,
+        coverUrl: `https://picsum.photos/400/400?random=${Date.now()}`,
+        };
+
+        const savedMusic = JSON.parse(
+        localStorage.getItem("generatedMusic") || "[]"
+        );
+        savedMusic.push(musicData);
+        localStorage.setItem("generatedMusic", JSON.stringify(savedMusic));
+
+        alert("音楽を保存しました！");
+    };
 
     return (
         <div>
@@ -81,6 +113,8 @@ function CreatePage(){
                         <audio controls>
                             <source src={generatedMusic} type="audio/mpeg" />
                         </audio>
+                        <br />
+                        <button onClick={handleSave}>音楽を保存</button>
                     </div>
                 )}
             </div>
