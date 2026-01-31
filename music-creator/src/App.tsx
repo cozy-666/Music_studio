@@ -35,6 +35,15 @@ function App() {
   return (
     <div>
       <h1>音楽一覧ページ</h1>
+      <ul>
+        {/* マップ書く時、keyでidは必須 */}
+        {musicList.map((music)=>(
+          <li key={music.id}>
+            <h3>{music.title}</h3>
+            <p>アーティスト: {music.artist}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
