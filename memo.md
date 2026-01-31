@@ -1,0 +1,2 @@
+index.cssは全体で適用されるcss
+main.tsxが全ての起点になっている。
