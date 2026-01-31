@@ -1,14 +1,10 @@
 import './App.css'
 
 function App() {
-
-  // alert('javascriptを実行');
-
-  // リターンの中はHTMLを書きます。これより上にjavascriptを書きます
   return (
-    <h1>
-      こんにちは
-    </h1>
+    <div>
+      <h1 className="text-3xl font-bold underline">Hello World!</h1>
+    </div>
   )
 }
 export default App
