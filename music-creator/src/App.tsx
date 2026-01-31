@@ -1,11 +1,14 @@
-// 基本の型確認
 import './App.css'
 
 function App() {
-  // タグは一つだけというルール
+
+  alert('javascriptを実行');
+
+  // リターンの中はHTMLを書きます。これより上にjavascriptを書きます
   return (
-    <div>
-    </div>
+    <>
+      こんにちは
+    </>
   )
 }
 export default App
