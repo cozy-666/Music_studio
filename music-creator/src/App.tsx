@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './App.css'
 import { Button } from './components/ui/button'
 
@@ -32,6 +33,16 @@ function App() {
     },
   ];
 
+  const [generatedMusic, setGeneratedMusic] = useState([]);
+
+  useEffect(()=>{
+    const saveMusic = JSON.parse(
+      localStorage.getItem("generatedMusic") || "[]"
+    );
+    setGeneratedMusic(saveMusic);
+    // 依存配列
+  },[])
+
   const playMusic = (audioUrl: string) => {
     const audio = new Audio(audioUrl);
     audio.play();
@@ -43,7 +54,24 @@ function App() {
 
       <section className="mb-8">
         <h2 className="text-xl font-bold mb-4">作成した音楽</h2>
-        <p>このあと実装する</p>
+
+        <div className="flex gap-4">
+          {generatedMusic.map((music)=>(
+            <div key={music.id} className="border p-4 rounded">
+              <img
+                src={music.coverUrl}
+                alt={music.title}
+                width="150"
+                height="150"
+                className="rounded md-2"
+                />
+                <h3 className="font-bold">{music.title}</h3>
+                <p className="text-gray-600 text-sm">{music.artist}</p>
+                <button onClick={()=>playMusic(music.audioUrl)}
+                className="mt-2 bg-blue-500 text-white px-3 py-1 rounded">再生</button>
+                </div>
+              ))}
+        </div>
       </section>
       <section>
         <h2 className="text-xl font bold mb-4">おすすめ音楽</h2>

@@ -39,3 +39,7 @@ useState
 ローカルストレージ
 検証ツール
 application => strage
+
+useEffect
+副作用を扱うためのフック
+外部のものと繋ぐ
