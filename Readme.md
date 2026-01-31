@@ -18,6 +18,7 @@ frameworkはReact variantはTypescript
 
 cd 名前
 npm install
+node_moduleフォルダが作成されます。
 
 npm run dev
 http://localhost:5173/
