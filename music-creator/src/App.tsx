@@ -32,6 +32,11 @@ function App() {
     },
   ];
 
+  const playMusic = (audioUrl: string) => {
+    const audio = new Audio(audioUrl);
+    audio.play();
+  }
+
   return (
     <div>
       <h1>音楽一覧ページ</h1>
@@ -41,6 +46,7 @@ function App() {
           <li key={music.id}>
             <h3>{music.title}</h3>
             <p>アーティスト: {music.artist}</p>
+            <button onClick={() => playMusic(music.audioUrl)}>再生する</button>
           </li>
         ))}
       </ul>
