@@ -38,6 +38,14 @@ npm install -D @types/node
 
 npx shadcn@latest init
 
+## 音楽自動生成利用してみる
+下記アカウント作成
+https://www.loudly.com/
+
+.env作成し
+VITE_LOUDLY_API_KEY=
+で獲得したAPIを設定。
+※課金設定があるので、外部公開しないように
 
 
 
