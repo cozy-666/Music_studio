@@ -1,6 +1,13 @@
 import { useEffect, useState } from 'react';
 import './App.css'
-import { Button } from './components/ui/button'
+
+type Music = {
+  id: number;
+  title: string;
+  artist: string;
+  audioUrl: string;
+  coverUrl: string;
+};
 
 function App() {
     const musicList = [
@@ -33,7 +40,7 @@ function App() {
     },
   ];
 
-  const [generatedMusic, setGeneratedMusic] = useState([]);
+  const [generatedMusic, setGeneratedMusic] = useState<Music[]>([]);
 
   useEffect(()=>{
     const saveMusic = JSON.parse(
