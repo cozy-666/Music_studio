@@ -2,7 +2,8 @@ import { useState } from "react";
 
 function CreatePage(){
     // 初期値は""
-    const [title, setTitle] = useState("");
+    // const [title, setTitle] = useState("");
+    let title ="初期タイトル";
     const handleGenerate =()=> {
         console.log("音楽生成開始");
     };
@@ -14,7 +15,10 @@ function CreatePage(){
                     <label>楽曲タイトル</label>
                     <div>{title}</div>
                     <input type="text" 
-                    onChange={(e) => setTitle(e.target.value)}
+                    onChange={(e) => {
+                        title=e.target.value
+                        console.log(title)
+                    }}
                     placeholder="楽曲のタイトルを入力"/>
                 </div>
                 <div>
