@@ -54,5 +54,8 @@ npm i axios
 npm i lucide-react
 npx shadcn@latest add card dialog
 
+npx shadcn@latest add input label textarea select
+
+
 
 
